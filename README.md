@@ -1,53 +1,34 @@
-## Laravel For Absolute Beginners Course Level 2 Starter Repo
+# Clean Product CRUD Application
 
-<img src="https://img-b.udemycdn.com/course/750x422/5896146_26e7_2.jpg">
+🔷 **Project Description**
 
-**Created By :** Mahmoud Anwar
-**Email :** Engsahaly@gmail.com
+This is a **Laravel application** to manage products (CRUD operations) 
 
-This is the main readme file for the starter code used in laravel for absolute beginners course on Udemy (Level 2)
+## 🚀 **Features**
 
-## Installation
+- **Product CRUD** (Create, Read, Update, Delete)
+- **SEO-friendly slugs** generated automatically for each product
+- **Multi-language support** with language switcher (Arabic / English)
+- **Image upload & management** using Spatie Media Library
+- **Clean Architecture**
+  - Repository Pattern
+  - Service Layer
+  - Interfaces for dependency inversion
+- **Authentication** with Laravel Breeze scaffolding
 
-To get started, clone this repository.
+---
 
-```
-git clone https://github.com/engsahaly/laravel_course_level_2_starter_repo.git
-```
+## ⚙️ **Tech Stack & Packages Used**
 
-Next, copy your `.env.example` file as `.env` and configure your Database connection.
+| Package | Description |
+|---|---|
+| **Laravel Breeze** | Lightweight authentication scaffolding with Tailwind CSS |
+| **cviebrock/eloquent-sluggable** | Automatically generates slugs for models based on specified fields |
+| **mcamara/laravel-localization** | Adds multi-language support with routes localization |
+| **spatie/laravel-medialibrary** | Upload and associate files/images to Eloquent models |
+| **PHP 8.x** | Core programming language |
+| **MySQL** | Database |
 
-```
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=YOUR-DATABASE-NAME
-DB_USERNAME=YOUR-DATABASE-USERNAME
-DB_PASSWORD=YOUR-DATABASE-PASSWROD
-```
+---
 
-## Run Packages and helpers
 
-You have to all used packages and load helpers as below.
-
-```
-composer install
-npm install
-npm run build
-```
-
-## Generate new application key
-
-You have to generate new application key as below.
-
-```
-php artisan key:generate
-```
-
-## Run Migrations
-
-You have to run all the migration files included with the project and also run seeders as below.
-
-```
-php artisan migrate
-```
